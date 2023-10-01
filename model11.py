@@ -5,6 +5,7 @@ import torch
 import torchvision
 import torchvision.transforms as transforms
 import torch.optim as optim
+import torch.nn.functional as F
 model_urls = {
     'model': 'https://github.com/dahwin/dahyunfacenet/raw/main/model.pth',
 }
