@@ -6,7 +6,7 @@ import torchvision
 import torchvision.transforms as transforms
 import torch.optim as optim
 model_urls = {
-    'model': 'https://github.com/lbleal1/torch-hub-test/raw/main/model_resources/iris_classifier_params.pt',
+    'model': 'https://github.com/dahwin/dahyunfacenet/raw/main/model.pth',
 }
 class DahwinFaceNet(nn.Module):
     def __init__(self):
