@@ -8,6 +8,7 @@ import torch.optim as optim
 model_urls = {
     'model': 'https://github.com/dahwin/dahyunfacenet/raw/main/model.pth',
 }
+__all__ = ['Model', 'model']
 class DahwinFaceNet(nn.Module):
     def __init__(self):
         super(DahwinFaceNet, self).__init__()
@@ -54,7 +55,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 # Create the model
 torch.manual_seed(42)
-model = DahwinFaceNet().to(device)
+Model = DahwinFaceNet().to(device)
 
 def model(pretrained: bool = False, progress: bool = True, **kwargs: Any) -> Model:
     r"""
